@@ -1,0 +1,33 @@
+.pokemonCard {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 320px;
+  background-color: var(--color-bg-button);
+  border-radius: 8px;
+  margin-bottom: 2%;
+  padding: 2em;
+}
+.pokemonCard h2 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.searchContainer {
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 75vw;
+}
+.searchContainer h2 {
+  margin-bottom: 14px;
+  color: azure;
+}
+
+.searchContainer input {
+  border-radius: 5px;
+  height: 40px;
+  width: 150px;
+  padding: 1%;
+  margin-bottom: 2%;
+  text-align: center;
+  border-color: dodgerblue;
+}
