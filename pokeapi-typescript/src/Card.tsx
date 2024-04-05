@@ -6,7 +6,7 @@ function Card({ pokemonSearched }: { pokemonSearched: Pokemon }) {
     <div className="card">
       <div className="pokemonCard">
         <img
-          src={pokemonSearched.sprites.front_default}
+          src={pokemonSearched.sprites.other.dream_world.front_default}
           alt={pokemonSearched.name}
         />
         <h2>{pokemonSearched.name}</h2>

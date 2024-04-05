@@ -6,7 +6,11 @@ export interface Pokemon {
   name: string;
   id: number;
   sprites: {
-    front_default: string;
+    other: {
+      dream_world: {
+        front_default: string;
+      };
+    };
   };
   types: {
     type: {
@@ -19,7 +23,7 @@ function App() {
   const [pokemonSearched, setPokemonSearched] = useState<Pokemon | null>(null);
 
   const handleSearch = (): void => {
-    if (typeof pokemonChosen === 'number' && pokemonChosen < 1100) {
+    if (typeof pokemonChosen === 'number' && pokemonChosen < 650) {
       const fetchData = async (): Promise<void> => {
         const response: Pokemon = await fetch(
           `https://pokeapi.co/api/v2/pokemon/${pokemonChosen}`

@@ -1,12 +1,17 @@
 .pokemonCard {
   display: flex;
   flex-direction: column;
-  width: 250px;
-  height: 320px;
+  width: 310px;
+  height: 400px;
   background-color: var(--color-bg-button);
   border-radius: 8px;
   margin-bottom: 2%;
   padding: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.pokemonCard img {
+  width: 200px;
 }
 .pokemonCard h2 {
   text-transform: uppercase;
